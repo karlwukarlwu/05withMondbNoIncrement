@@ -1,8 +1,8 @@
 const {getAllLaunches,addNewLaunch,existsLaunchWithId,abortLaunchById} = require("../../models/launches.model")
 
-function httpGetAllLaunches(req, res) {
+async function httpGetAllLaunches(req, res) {
 
-  return res.status(200).json(getAllLaunches());
+  return res.status(200).json(await getAllLaunches());
 //   为什么map 不能直接return
 //     The res.json() method can only serialize
 //     JavaScript objects and arrays,
