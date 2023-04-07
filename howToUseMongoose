@@ -21,3 +21,5 @@ mongoose 在创建的时候会给不同数据给配id
 __v是版本号
 也是mongo默认生成的
 在网站的collection里面生成的
+
+当运行mongo的uploadOne的时候会上传文件到mongo
